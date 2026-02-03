@@ -1,0 +1,9 @@
+{
+" "version": 2,
+  "builds": [{ "src": "api/*.mjs", "use": "@vercel/node" }],
+  "routes": [{ "src": "/api/(.*)", "dest": "/api/mcp.mjs" }],
+  "env": {
+    "APEX_ENABLED": "true",
+    "DEVICE_ID": "iPhone16ProMax"
+  }
+}
